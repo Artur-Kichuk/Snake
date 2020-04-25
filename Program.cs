@@ -12,7 +12,6 @@ namespace Snake
 		{
 			Console.SetBufferSize( 80, 25 );
 
-			// Отрисовка рамочки
 			HorizontalLine upLine = new HorizontalLine( 0, 78, 0, '+' );
 			HorizontalLine downLine = new HorizontalLine( 0, 78, 24, '+' );
 			VerticalLine leftLine = new VerticalLine( 0, 24, 0, '+' );
@@ -22,15 +21,9 @@ namespace Snake
 			leftLine.Drow();
 			rightLine.Drow();
 
-
-			// Отрисовка точек			
+			
 			Point p = new Point(4, 5, '*');
 			p.Draw();
-
-
-			Emploee e = new Emploee();
-			e.age = 42;
-			e.pay = 30000;
 		}
 	}
 }
